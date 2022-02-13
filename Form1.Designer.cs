@@ -36,11 +36,12 @@ namespace SistemaLogin
             // 
             this.label_BoasVindas.AutoSize = true;
             this.label_BoasVindas.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label_BoasVindas.Location = new System.Drawing.Point(267, 172);
+            this.label_BoasVindas.Location = new System.Drawing.Point(264, 176);
             this.label_BoasVindas.Name = "label_BoasVindas";
             this.label_BoasVindas.Size = new System.Drawing.Size(266, 65);
             this.label_BoasVindas.TabIndex = 0;
             this.label_BoasVindas.Text = "Tela Inicial";
+            this.label_BoasVindas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 

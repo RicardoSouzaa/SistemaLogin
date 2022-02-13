@@ -12,6 +12,8 @@ namespace SistemaLogin
 {
     public partial class FormLogin : Form
     {
+        public static bool Cancelar = false;
+
         public FormLogin()
         {
             InitializeComponent();
@@ -19,7 +21,9 @@ namespace SistemaLogin
 
         private void Entrar_Click(object sender, EventArgs e)
         {
-            if (CadastroUsuarios.Login(txtUsuario.ToString(), txtSenha.ToString()))
+            string nome = txtUsuario.Text;
+            string senha = txtSenha.Text;
+            if (CadastroUsuarios.Login(nome, senha))
             {
                 Close();
             }
@@ -35,6 +39,8 @@ namespace SistemaLogin
 
         private void Cancelar_Click(object sender, EventArgs e)
         {
+            Cancelar = true;
+            Close();
         }
     }
 }

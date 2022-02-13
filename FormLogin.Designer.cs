@@ -50,6 +50,7 @@ namespace SistemaLogin
             // 
             this.txtUsuario.Location = new System.Drawing.Point(30, 42);
             this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.PlaceholderText = "Digite seu Login";
             this.txtUsuario.Size = new System.Drawing.Size(437, 23);
             this.txtUsuario.TabIndex = 1;
             // 
@@ -57,6 +58,8 @@ namespace SistemaLogin
             // 
             this.txtSenha.Location = new System.Drawing.Point(30, 104);
             this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '/';
+            this.txtSenha.PlaceholderText = "Digite sua senha";
             this.txtSenha.Size = new System.Drawing.Size(437, 23);
             this.txtSenha.TabIndex = 3;
             // 

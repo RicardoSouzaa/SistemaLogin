@@ -20,7 +20,24 @@ namespace SistemaLogin
         private void Form1_Load(object sender, EventArgs e)
         {
             FormLogin f = new();
-            f.ShowDialog();
+
+            while (CadastroUsuarios.UsuarioLogado == null)
+            {
+                //se nao estiver logado
+                Visible = false;
+                f.ShowDialog();
+
+                //se clicar no botão cancelar
+                if (FormLogin.Cancelar == true)
+                {
+                    Application.Exit();
+                    return;
+                }
+            }
+
+            // se login for verdadeiro
+            label_BoasVindas.Text = $"Bem vindo(a) \n {CadastroUsuarios.UsuarioLogado.Nome}";
+            Visible = true;
         }
     }
 }
